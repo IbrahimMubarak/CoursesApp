@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApp", "CoursesApp\CoursesApp.csproj", "{049CAB50-53A4-4035-8E37-7DDB6D18FBFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesApp.Tests", "CoursesApp.Tests\CoursesApp.Tests.csproj", "{4F755B85-C3FF-4752-AEB1-8387C9DB53D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{049CAB50-53A4-4035-8E37-7DDB6D18FBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049CAB50-53A4-4035-8E37-7DDB6D18FBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049CAB50-53A4-4035-8E37-7DDB6D18FBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049CAB50-53A4-4035-8E37-7DDB6D18FBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F755B85-C3FF-4752-AEB1-8387C9DB53D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F755B85-C3FF-4752-AEB1-8387C9DB53D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F755B85-C3FF-4752-AEB1-8387C9DB53D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F755B85-C3FF-4752-AEB1-8387C9DB53D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
