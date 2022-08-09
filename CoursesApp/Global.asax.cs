@@ -13,6 +13,7 @@ namespace CoursesApp
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            AutoMapperConfig.init();
         }
     }
 }

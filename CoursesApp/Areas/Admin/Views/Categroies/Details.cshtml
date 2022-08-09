@@ -1,0 +1,52 @@
+﻿@model CoursesApp.Models.Categroiesmodel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>Category</h2>
+<hr />
+<div>
+    <h4>Details</h4>
+   <br />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <br />
+
+        @if (Model.ParentName != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.ParentName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ParentName)
+            </dd>
+        }
+        else
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.ParentName)
+            </dt>
+
+            <dd style="color:red;font-weight:bold">
+                Has No Parent
+            </dd>
+        }
+
+    </dl>
+</div>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit",null ,new { id = Model.Id },new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Back to List", "Index",null,new {@class="btn btn-warning" })
+</p>
+<br />

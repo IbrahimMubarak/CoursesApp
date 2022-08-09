@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d09394ac89d4452094afcf7caa2b5467" Name="Diagram1">
+        <EntityTypeShape EntityType="Courses_DBModel.Admin" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.Category" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.Course" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.Lesson" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.sysdiagram" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.Trainee" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.TraineeCourse" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Courses_DBModel.Trainer" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="Courses_DBModel.FK_Category_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="Courses_DBModel.FK_Course_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="Courses_DBModel.FK_Course_Trainer" ManuallyRouted="false" />
+        <AssociationConnector Association="Courses_DBModel.FK_Lesson_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Courses_DBModel.FK_TraineeCourse_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Courses_DBModel.FK_TraineeCourse_Trainee" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

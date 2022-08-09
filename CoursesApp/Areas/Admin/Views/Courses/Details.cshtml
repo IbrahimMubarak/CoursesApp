@@ -1,0 +1,81 @@
+﻿@model CoursesApp.Models.CourseModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>Courses</h2>
+<hr />
+<div>
+    <h4>Details</h4>
+    <br />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        @if (Model.ImgId != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.ImgId)
+            </dt>
+
+            <dd>
+                <img src="~/Uploads/Courses/@Model.ImgId" class="img-thumbnail" style="width:250px; height:250px;" />
+            </dd>
+        }
+
+        else
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.ImgId)
+            </dt>
+
+            <dd>
+                <img src="~/Uploads/Courses/hf-classifieds_no-image-available_2.jpg" class="img-thumbnail" style="width:250px; height:250px;" />
+            </dd>
+        }
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerName)
+        </dd>
+
+    </dl>
+</div>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit", null, new { id = Model.Id }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-warning" })
+</p>
+<br />
