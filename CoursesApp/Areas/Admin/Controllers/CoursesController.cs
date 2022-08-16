@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace CoursesApp.Areas.Admin.Controllers
 {
+    
     public class CoursesController : Controller
     {
 

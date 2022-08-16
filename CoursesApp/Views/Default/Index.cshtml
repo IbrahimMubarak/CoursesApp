@@ -1,7 +1,29 @@
-﻿
+﻿@model IEnumerable<CoursesApp.Models.CourseModel>
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
+
+<div class="row gx-lg-5">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-xxl-4 mb-5">
+            <div class="card" style="width: 300px;">
+                <img src="~/Uploads/Courses/@item.ImgId" class="w-100 border-bottom" alt="Sample Image" style="height:200px">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Description</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Category : @item.CategoryName</li>
+                    <li class="list-group-item">Trainer : @item.TrainerName</li>
+                   
+                </ul>
+                <div class="card-body">
+                    @Html.ActionLink("Enroll Now", "","",new{@class="btn btn-default",@style= "background-color:rebeccapurple;color:white;" })
+                </div>
+            </div>
+        </div>
+    }
+</div>

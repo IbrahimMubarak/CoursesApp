@@ -34,4 +34,5 @@ namespace CoursesApp.Models
         public virtual DbSet<TraineeCourse> TraineeCourses { get; set; }
         public virtual DbSet<Trainer> Trainers { get; set; }
     }
+
 }
